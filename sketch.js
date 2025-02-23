@@ -9,10 +9,10 @@ let glitchStarted = false;  // Variable pour savoir si le glitch est activé
 
 function preload() {
   for (let i = 0; i < 4; i++) {
-    images[i] = loadImage(`assets/PERSO${i * 2 + 1}.jpeg`);
-    glitchImages[i] = loadImage(`assets/PERSO${i * 2 + 2}.jpeg`);
+    images[i] = loadImage(`PERSO${i * 2 + 1}.jpeg`);
+    glitchImages[i] = loadImage(`PERSO${i * 2 + 2}.jpeg`);
   }
-  backgroundImg = loadImage("assets/fond.jpg");
+  backgroundImg = loadImage("fond.jpg");
 }
 
 function setup() {

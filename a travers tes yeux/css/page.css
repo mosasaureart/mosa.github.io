@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'Alegreya';
+    src: url('../src/fonts/Alegreya-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alegreya';
+    src: url('../src/fonts/Alegreya-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mayonice';
+    src: url('../src/fonts/Mayonice.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Alegreya', serif;
+    font-size: 1.5em;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+main{
+    width: 100%;
+}
+.content-container{
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+.text-container{
+    max-width: 750px;
+}
+
+p {
+    margin-bottom: 35px;
+    line-height: 35px;
+}
+p:last-child{
+    margin-bottom: 0;
+}
+
+.bold-italic {
+    font-family: 'Alegreya', serif;
+    font-weight: 800;
+    font-style: italic;
+    color: #1118a6;
+}
+
+.subtitle {
+    font-family: 'Mayonice', sans-serif;
+    font-size: 4em;
+    color: #1118a6;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.image-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-container img{
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    aspect-ratio: 1/3;
+
+    object-fit: contain;
+
+    mix-blend-mode: multiply;
+}
+.image-container img.square{
+    aspect-ratio: 1/1;
+}
+
+.image-container.vcenter{
+    justify-content: center;
+}
+.image-container.vbottom{
+    justify-content: flex-end;
+}
+.image-container.vbottom img{
+    transform: translateY(20px);
+}   
+.image-container.hright img{
+    transform: translateX(20px);
+}
+.image-container.vbottom.hright img{
+    transform: translateX(20px) translateY(20px);
+}
+
+
+
+@media  screen and (max-width: 700px) {
+    body{
+        background-color: #a2bdd1;
+    }
+
+    .content-container{
+        grid-template-columns: 1fr;
+    }
+    .text-container{
+        font-size: 4Vw;
+    }
+    .subtitle {
+        font-size: 12Vw;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
